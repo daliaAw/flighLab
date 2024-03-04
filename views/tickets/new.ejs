@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>New Ticket</h1>
+<form action="/tickets" method="POST">
+  <!-- Add fields for ticket details -->
+  <!-- For example:
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="flight">Flight:</label>
+  <select id="flight" name="flight" required>
+    <% flights.forEach(flight => { %>
+      <option value="<%= flight._id %>">
+        <%= flight.airline %> Flight <%= flight.flightNo %> - <%= flight.airport %>
+      </option>
+    <% }); %>
+  </select><br><br>
+
+  <label for="seat">Seat:</label>
+  <input type="text" id="seat" name="seat" required><br><br>
+  -->
+  
+  <input type="submit" value="Create Ticket">
+</form>
+
+<a href="/tickets">Back to All Tickets</a>
+
+</body>
+</html>

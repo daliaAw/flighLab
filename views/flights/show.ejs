@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Flight Details</h1>
+  <p>Airline: <%= flight.airline %></p>
+  <p>Flight Number: <%= flight.flightNo %></p>
+  <p>Airport: <%= flight.airport %></p>
+  <p>Departs: <%= flight.departs %></p>
+  
+  <h2>Destinations:</h2>
+  <ul>
+    <% flight.destinations.forEach(destination => { %>
+      <li>Airport: <%= destination.airport %> | Arrival: <%= destination.arrival %></li>
+    <% }); %>
+  </ul>
+  
+  <a href="/flights">Back to All Flights</a>
+  
+  
+
+</body>
+</html>
